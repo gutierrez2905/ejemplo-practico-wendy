@@ -18,7 +18,6 @@ jobs:
       uses: actions/setup-node@v4
       with:
         node-version: '20'
-        # (Quitamos la línea de cache: 'npm' para evitar el error)
 
     - name: Instalar dependencias
       run: npm install
