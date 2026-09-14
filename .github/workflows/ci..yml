@@ -19,8 +19,8 @@ jobs:
       with:
         node-version: '20'
 
-    - name: Instalar dependencias
-      run: npm install
+    - name: Instalar dependencias limpias
+      run: npm ci || npm install
 
     - name: Ejecutar compilación (Build)
       run: npm run build
